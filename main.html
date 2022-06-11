@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAP Simulator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#home">Menu</a>
+  <a href="#news">Edit</a>
+  <a href="#contact">Favorites</a>
+  <a href="#about">Extras</a>
+  <a href="#about">System</a>
+  <a href="#about">Help</a>
+
+  <a href="#exit" class="right">X</a>
+</div>
+
+<button id="ok_field" type="button" onclick="LoadTransactiom()">✔</button> 
+<input id="transaction_field" onkeydown="ValidateInputField(event)">
+
+<br>
+SAP Easy Access <br>
+
+
+
+<script>
+function ValidateInputField(event) {
+	var keyCode = event.keyCode;
+	if (keyCode == 13) {
+		LoadTransactiom();
+	}
+}
+
+function LoadTransactiom() {
+
+  var transaction_field, transaction_code, text;
+  transaction_field = document.getElementById("transaction_field");
+  transaction_code = transaction_field.value;
+
+  if (transaction_code == 'MM01') {
+  	location.href = "MM01.html";
+  }
+  else if(transaction_code == '/n') {
+	location.href = "main.html";
+  }
+
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>

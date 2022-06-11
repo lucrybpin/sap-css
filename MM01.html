@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="topheader"></div>
+	<div class="topnavbar">
+		<button class="topnavbar">⊟</button>
+		<button class="topnavbar"><u>U</u>ser</button>
+		<button class="topnavbar"><u>E</u>dit</button>
+		<button class="topnavbar"><u>G</u>oto</button>
+		<button class="topnavbar"><u>I</u>nformation</button>
+		<button class="topnavbar"><u>E</u>nvironment</button>
+		<button class="topnavbar"><u>S</u>ystem</button>
+		<button class="topnavbar"><u>H</u>elp</button>
+
+		<div class="topnavbarright">
+			<button class="topnavbarrightbutton">X</button>
+		</div>
+		<div class="topnavbarright">
+			<button class="topnavbarrightbutton">□</button>
+		</div>
+		<div class="topnavbarright">
+			<button class="topnavbarrightbutton">_</button>
+		</div>
+	</div>
+
+	<div class="topnavbarshadow"></div>
+
+	<div class="menu">
+		<button class="continue"> <b>✔</b> </button>
+		<input class="okcode" id="transaction_field" onkeydown="Test(event)">
+		<button class="reduce"> <b>≪</b> </button>
+		
+		<button class="save"> sv </button>
+		<button class="back"> ≪ </button>
+		<button class="cancel"> ⇑ </button>
+		<button class="exit"> x </button>
+	</div>
+
+	<div class="menushadow"></div>
+
+	<div class="screentitle">
+		<b>Create Material (Initial Screen)</b>
+	</div>
+
+	<div class="menushadow"></div>
+
+	<div class="screenmenu">
+		<button class="menushadowbutton">Select View(s)</button>
+		<button class="menushadowbutton">Org. Levels</button>
+		<button class="menushadowbutton">Data</button>
+	</div>
+
+	<div class="menushadow"></div>
+
+	<div>
+		<table> 
+		<tr> 
+			<td>Material</td>
+			<td>
+				<input type="text" onfocus="ShowMatchCode('materialField')" onblur="HideMatchCode('materialField')">
+				<button id="materialField" class="matchCode">□</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Industry sector</td>
+			<td>
+				<select name="IndustrySector" style="width: 172px">
+					<option value="volvo"></option>
+					<option value="volvo">Volvo</option>
+				</select>
+			</td>
+		</tr> 
+
+		<tr>
+			<td>Material Type</td>
+			<td>
+				<select name="IndustrySector" style="width: 172px">
+					<option value="volvo"></option>
+   					<option value="saab">Saab</option>
+				</select>
+			</td>
+		</tr> 
+		<tr><td><br/></td></tr>
+		<tr>
+			<td>Change Number</td>
+			<td><input type="text" name=""></td>
+		</tr> 
+	</table>
+	</div>
+
+</body>
+</html>
